@@ -1,14 +1,18 @@
 {
-  "name": "backend",
+  "name": "json-server-heroku",
   "version": "1.0.0",
-  "description": "Api REST para controle de jogos",
-  "main": "index.js",
+  "description": "Simple json-base database to deploy to Heroku",
+  "main": "server.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3001"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "author": "Pablo Monteiro",
-  "license": "MIT",
+  "keywords": [
+    "json-server,heroku, node, REST API"
+  ],
+  "author": "Jesper Orb",
+  "license": "ISC",
   "dependencies": {
-    "json-server": "0.13.0"
+    "json-server": "^0.12.1"
   }
 }
